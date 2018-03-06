@@ -4,14 +4,13 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import org.junit.Test;
 
 import de.adrianschneble.dnd.playtestsimulator.src.Creature;
-import de.adrianschneble.dnd.playtestsimulator.src.DiceRoll;
 import de.adrianschneble.dnd.playtestsimulator.src.Dice;
+import de.adrianschneble.dnd.playtestsimulator.src.DiceRoll;
 import de.adrianschneble.dnd.playtestsimulator.src.Encounter;
 import de.adrianschneble.dnd.playtestsimulator.src.Result;
 

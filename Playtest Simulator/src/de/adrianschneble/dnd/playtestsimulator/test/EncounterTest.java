@@ -15,7 +15,7 @@ public class EncounterTest {
 		List<Creature> players = new ArrayList<>();
 		List<Creature> enemies = new ArrayList<>();
 		enemies.add(new Creature(null));
-		Encounter encounter = new Encounter(players, enemies);
+		new Encounter(players, enemies);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -23,7 +23,7 @@ public class EncounterTest {
 		List<Creature> players = new ArrayList<>();
 		players.add(new Creature(null));
 		List<Creature> enemies = new ArrayList<>();
-		Encounter encounter = new Encounter(players, enemies);
+		new Encounter(players, enemies);
 	}
 	
 }

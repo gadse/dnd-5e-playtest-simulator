@@ -16,12 +16,15 @@ public class Encounter {
 	}
 
 	public Result run() {
-		double expectation = players.get(0).getDamage().expectation();
-		if (expectation == 0) {
+		double averagePlayerDamage = players.get(0).getDamage().expectation();
+		double averageEnemyDamage = enemies.get(0).getDamage().expectation();
+		if (averagePlayerDamage == 0) {
 			return new Result(0);
-		} else {
+		}
+		if (averageEnemyDamage == 0){
 			return new Result(1);
 		}
+		return null;
 	}
 
 }
