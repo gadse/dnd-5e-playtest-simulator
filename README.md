@@ -18,6 +18,11 @@ Battle aspects like movement, terrain, etc. are not considered. Nor are more com
 of Madness". Therefore this is no real simulator, but more of an estimator (maybe we should change the name \*cough\*).
 
 
+## Further Information
+Can be found in [goals.md] (what should go in, what should come out?) and [design.md] (who should probably hold
+information on whom?).
+
+
 ## Motivation
 It's our own experience that it's hard to estimate the difficulty level
 of a DND5E battle, even with Wizards of the Coast's challenge rating system, which turns out to greatly overestimate
