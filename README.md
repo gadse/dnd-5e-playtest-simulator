@@ -19,8 +19,8 @@ of Madness". Therefore this is no real simulator, but more of an estimator (mayb
 
 
 ## Further Information
-Can be found in [goals.md] (what should go in, what should come out?) and [design.md] (who should probably hold
-information on whom?).
+Can be found in [goals.md](goals.md) (what should go in, what should come out?) and [design.md](design.md) (who should
+probably hold information on whom?).
 
 
 ## Motivation
