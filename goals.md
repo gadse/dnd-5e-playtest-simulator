@@ -5,6 +5,7 @@ For each **player**:
  *  Level
  *  STR, DEX, CON, CHA, WIS, INT
  *  Max and start HP
+ *  Armor Class
  *  Spell slots
  *  Spell modifier (STR, DEX, etc)
  *  Attack count
