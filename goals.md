@@ -1,11 +1,11 @@
 # Input
 For each **player**:
  *  Name (optional, could help with interpreting results)
- *  Class
+ *  CreatureClass
  *  Level
  *  STR, DEX, CON, CHA, WIS, INT
  *  Max and start HP
- *  Armor Class
+ *  Armor CreatureClass
  *  Spell slots
  *  Spell modifier (STR, DEX, etc)
  *  Attack count
