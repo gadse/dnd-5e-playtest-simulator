@@ -3,6 +3,8 @@ import java.util.List;
 /**
  * Used to model both players and creatures, since players ARE creatures.
  * For creatures that don't have a playable class, use class CreatureClass.CREATURE.
+ *
+ * TODO: We need Lombok here! :)
  */
 public class Creature {
 
