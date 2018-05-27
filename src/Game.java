@@ -6,7 +6,7 @@ public class Game {
     private List<Creature> enemies;
     private int round = 1;
 
-    //ToDo Combat Log
+    //TODO: Combat Log
 
     /**
      * Creates a new game with the given players and enemies. No sanity checks
@@ -19,8 +19,28 @@ public class Game {
 
 
     public List<List<Creature>> simulate() {
-        //ToDo
+
         return null;
+    }
+
+    private boolean enemies_alive() {
+        return creatures_alive(enemies);
+    }
+
+    private boolean players_alive() {
+        return creatures_alive(players);
+    }
+
+
+    private boolean creatures_alive(List<Creature> creatures) {
+        boolean result = false;
+        for (Creature creature: creatures) {
+            if (creature.getHealth() > 0) {
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 
     private void playRound() {
