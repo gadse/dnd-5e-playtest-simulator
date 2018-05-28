@@ -3,13 +3,13 @@ import lombok.Data;
 
 /**
  * Used to model both players and creatures, since players ARE creatures.
- * For creatures that don't have a playable class, use class CreatureClass.CREATURE.
+ * For creatures that don't have a playable class, use class CreatureType.CREATURE.
  */
 @Data
 public class Creature {
 
     private String name;
-    private CreatureClass playerClass;
+    private CreatureType playerClass;
 
     private int xp;
     private int strength;
