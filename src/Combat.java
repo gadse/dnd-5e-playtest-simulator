@@ -1,33 +1,43 @@
+import java.util.LinkedList;
 import java.util.List;
 
-public class Game {
+/**
+ * Represents a full combat from the first round to the last.
+ */
+public class Combat {
 
     private List<Creature> players;
     private List<Creature> enemies;
-    private int round = 1;
 
-    //TODO: Combat Log
+    private int round;
+    private List<CombatLogEntry> log;
 
     /**
-     * Creates a new game with the given players and enemies. No sanity checks
+     * Creates a new combat with the given players and enemies. No sanity checks
      * are performed here, since that is done in the Creature constructor.
+     *
+     * @param players: A list of players.
+     * @param enemies: A list of enemies the players need to fight. These can be humanoids that fall into the DND player
+     *               class schema, or creatures like owlbears, bugbears, and so on.
      */
-    public Game(List<Creature> players, List<Creature> enemies) {
+    public Combat(List<Creature> players, List<Creature> enemies) {
         this.players = players;
         this.enemies = enemies;
+        this.round = 1;
+        this.log = new LinkedList<>();
     }
 
 
     public List<List<Creature>> simulate() {
-
+        // TODO
         return null;
     }
 
-    private boolean enemiesAlive() {
+    public boolean enemiesAlive() {
         return creaturesAlive(enemies);
     }
 
-    private boolean playersAlive() {
+    public boolean playersAlive() {
         return creaturesAlive(players);
     }
 
@@ -44,7 +54,7 @@ public class Game {
     }
 
     private void playRound() {
-        //TODO
+        // TODO
     }
 
 }

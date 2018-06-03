@@ -1,6 +1,7 @@
 public enum CreatureType {
 
-    // TODO: extend this
-    CREATURE, FIGHTER, PALADIN, ROGUE;
+    // TODO: extend this!
+    FIGHTER, PALADIN, ROGUE,
+    CREATURE;
 
 }

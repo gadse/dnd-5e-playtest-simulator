@@ -31,12 +31,17 @@ public class Creature {
     //ToDo: Heal Action List
     //ToDo: Attack Modifier List
 
-    private List<DamageTypes> resistances;
-    private List<DamageTypes> weaknesses;
+    private List<DamageType> resistances;
+    private List<DamageType> weaknesses;
 
     private boolean advantage;
 
     public Creature() {
+        this.health = 1;
+    }
+
+    public Creature(int health) {
+        this.health = health;
     }
 
 }
