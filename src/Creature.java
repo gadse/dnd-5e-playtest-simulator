@@ -36,4 +36,7 @@ public class Creature {
 
     private boolean advantage;
 
+    public Creature() {
+    }
+
 }

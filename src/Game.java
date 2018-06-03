@@ -23,16 +23,16 @@ public class Game {
         return null;
     }
 
-    private boolean enemies_alive() {
-        return creatures_alive(enemies);
+    private boolean enemiesAlive() {
+        return creaturesAlive(enemies);
     }
 
-    private boolean players_alive() {
-        return creatures_alive(players);
+    private boolean playersAlive() {
+        return creaturesAlive(players);
     }
 
 
-    private boolean creatures_alive(List<Creature> creatures) {
+    private boolean creaturesAlive(List<Creature> creatures) {
         boolean result = false;
         for (Creature creature: creatures) {
             if (creature.getHealth() > 0) {
