@@ -8,17 +8,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
-    private Game game = null;
+    private static Game game = null;
 
     @BeforeAll
-    void setUp() {
+    static void setUp() {
         List<Creature> players = new LinkedList<Creature>();
         players.add(new Creature());
         List<Creature> enemies = new LinkedList<Creature>();
         enemies.add(new Creature());
-        this.game = new Game(players, enemies);
+        game = new Game(players, enemies);
 
-        List<List<Creature>> result = this.game.simulate();
+        List<List<Creature>> result = game.simulate();
         assertNotNull(result);
         for (List<Creature> list: result) {
             assert list.size() > 0;
