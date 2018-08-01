@@ -1,4 +1,5 @@
 import lombok.Data;
+import lombok.NonNull;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,8 +14,8 @@ import java.util.List;
 @Data
 public class Creature {
 
-    private String name;
-    private CreatureType classOrCreature;
+    @NonNull private String name;
+    @NonNull private CreatureType classOrCreature;
 
     private int xp;
     private int strength;
@@ -36,8 +37,8 @@ public class Creature {
     //ToDo: Heal Action List
     //ToDo: Attack Modifier List
 
-    private List<DamageType> resistances;
-    private List<DamageType> weaknesses;
+    @NonNull private List<DamageType> resistances;
+    @NonNull private List<DamageType> weaknesses;
 
     private boolean advantage;
 
