@@ -15,7 +15,7 @@ public class Shell {
             sb.append(Die.roll(20, 20) + "\n");
         }
         System.out.println(sb);
-        System.out.println(Input.read_from_file("test/players.json"));
+        System.out.println(new Input("test/players.json"));
     }
 
 }

@@ -1,20 +1,28 @@
-creatures:
-  - name: "creature1"
-    playerClass: "FIGHTER"
-    xp: 1337
-    strength: 10
-    dexterity: 10
-    constitution: 10
-    charisma: 10
-    wisdom: 10
-    intelligence: 10
-    health: 42
-    maxHealth: 42
-    armorClass: 15
-    resistances:
-      - "PIERCING"
-      - "SLASHING"
-    weaknesses:
-      - "PIERCING"
-      - "BLUDGEONING"
-    advantage: False
+{
+  "players": [
+    {
+      "name": "creature1",
+      "classOrCreature": "FIGHTER",
+      "xp": 1337,
+      "strength": 10,
+      "dexterity": 10,
+      "constitution": 10,
+      "charisma": 10,
+      "wisdom": 10,
+      "intelligence": 10,
+      "health": 42,
+      "maxHealth": 42,
+      "armorClass": 15,
+      "resistances": [
+        "PIERCING",
+        "SLASHING"
+      ],
+      "weaknesses": [
+        "PIERCING",
+        "BLUDGEONING"
+      ],
+      "advantage": "false"
+    }
+  ],
+  "enemies": []
+}

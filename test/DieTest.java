@@ -4,7 +4,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DieTest {
+public class DieTest {
 
     private static List<Integer> eyeCounts = Arrays.asList(4, 6, 8, 10, 12, 20);
     private static int dieBound = 10;

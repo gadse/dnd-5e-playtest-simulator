@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CombatTest {
+public class CombatTest {
 
     private static Combat combat = null;
 
