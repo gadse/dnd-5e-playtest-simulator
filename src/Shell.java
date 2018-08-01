@@ -16,6 +16,15 @@ public class Shell {
         }
         System.out.println(sb);
         System.out.println(new Input("test/players.json"));
+
+        Attack attack = new Attack("Sword Slash", AttackType.MELEE, DamageType.SLASHING, 1, 6, 1);
+        attack.roll();
+        System.out.println(attack.describe());
+        Attack attack2 = new Attack("Light Crossbow", AttackType.RANGED, DamageType.PIERCING, 1, 6, 1);
+        System.out.println(attack2.describe());
+        Attack attack3 = new Attack("Greatsword", AttackType.RANGED, DamageType.PIERCING, 2, 6, 3);
+        attack3.roll();
+        System.out.println(attack3.describe());
     }
 
 }

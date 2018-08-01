@@ -31,6 +31,7 @@ public class Input {
      * @param pathname The input JSON's pathname.
      */
     Input(String pathname) {
+        //TODO: Verification! (E.g. basic stats > 0, non-empty names, valid types, etc.)
         String content = null;
         try {
             File file = new File(pathname);
