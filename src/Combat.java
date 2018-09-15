@@ -33,6 +33,14 @@ public class Combat {
         return null;
     }
 
+    private void simulateRound() {
+        // TODO
+        // generate initiative-sorted list of all creatures
+        // for each creature in the list:
+        //     Choose one action by a simple heuristic and execute. Choose targets with simple heuristic.
+        //     Don't forget to apply status changes like checking off inspiration dice.
+    }
+
     public boolean enemiesAlive() {
         return creaturesAlive(enemies);
     }
@@ -55,6 +63,29 @@ public class Combat {
 
     private void playRound() {
         // TODO
+    }
+
+    public String toString() {
+        return "Round "+round+" | PLA: "+players+" | ENE: "+enemies+" | LOG: " + log;
+    }
+
+    public String toPrettyString() {
+        return "== Round "+round+" =="+
+                "\n> PLA: "+getPrettyCreatureList(players)+
+                "\n> ENE: "+getPrettyCreatureList(enemies)+"" +
+                "\n> LOG: "+log;
+    }
+
+    public String getPrettyCreatureList(List<Creature> creatures) {
+        String prettyList="[\n";
+        if (creatures.isEmpty()) {
+            prettyList += "\t--empty--";
+        }
+        for (Creature c: creatures) {
+            prettyList += "\t" + c.toString();
+        }
+        prettyList += "\n]";
+        return prettyList;
     }
 
 }

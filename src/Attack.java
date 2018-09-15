@@ -1,10 +1,8 @@
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Collections;
-import java.util.List;
 
 @RequiredArgsConstructor
 @Data
@@ -15,7 +13,7 @@ public class Attack implements CombatAction {
     @NonNull private int dieCount;
     @NonNull private int dieType;
     @NonNull private int offset;
-    private int damage = 0;
+    private int damage = -1;
 
     public void roll() {
         Integer[] dies = new Integer[dieCount];

@@ -1,10 +1,12 @@
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class CombatLogEntry {
 
     private String name;
-    private List<Creature> targets; // Implement small Tuple class!
-    private List<Integer> targetHealthChanges;
+    private List<Pair<Creature, Integer>> effects;
     private DamageType type;
     private String description;
 

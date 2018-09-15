@@ -1,4 +1,5 @@
 import java.lang.StringBuilder;
+import java.util.LinkedList;
 
 public class Shell {
 
@@ -15,7 +16,11 @@ public class Shell {
             sb.append(Die.roll(20, 20) + "\n");
         }
         System.out.println(sb);
-        System.out.println(new Input("test/players.json"));
+
+        Input playerInfo = new Input("test/players.json");
+        System.out.println(playerInfo);
+        LinkedList<Creature> players = playerInfo.getPlayers();
+        LinkedList<Creature> enemies = playerInfo.getEnemies();
 
         Attack attack = new Attack("Sword Slash", AttackType.MELEE, DamageType.SLASHING, 1, 6, 1);
         attack.roll();
@@ -25,6 +30,12 @@ public class Shell {
         Attack attack3 = new Attack("Greatsword", AttackType.RANGED, DamageType.PIERCING, 2, 6, 3);
         attack3.roll();
         System.out.println(attack3.describe());
+
+        Combat combat = new Combat(players, enemies);
+        System.out.println(combat.toPrettyString());
+        System.out.println("Players alive: " + combat.playersAlive());
+        System.out.println("Enemies alive: " + combat.enemiesAlive());
+
     }
 
 }
